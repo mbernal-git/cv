@@ -536,3 +536,8 @@ header {
       opacity: 0;
     }
   }
+
+  .current {
+    background-color: #59E4A8;
+    display: inline-block;
+  }
