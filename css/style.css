@@ -540,8 +540,3 @@ header {
   .holder {
     margin: 0 auto;
   }
-
-  .skill-em {
-    letter-spacing: -0.3125rem;
-    opacity: 0.9;
-  }
