@@ -560,3 +560,9 @@ header {
 
 }
 
+
+ul, ol {
+    margin: 9px;
+    padding: 9px;
+    box-sizing: border-box;
+}
