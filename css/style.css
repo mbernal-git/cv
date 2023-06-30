@@ -6,6 +6,13 @@
         font-family: 'Sacramento', cursive;
 */
 
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth; 
 }
@@ -464,42 +471,6 @@ main {
     visibility: visible;
 }
 
-@media only screen and (max-width: 690px) {
-/* mobile */
-.skills {
-    justify-content: space-evenly;
-}
-
-.skill-row {
-    width: 100%;
-    text-align: center;
-    line-height: 1;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    justify-content: space-evenly;
-    padding: 0 1.2em;
-}
-
-header {
-    background-size: 90%;
-}
-
-.skill-row img {
-    width: 20%;
-    margin: 0 auto;
-}
-/* end of mobile */
-}
-
-
-/* Nest hub */
-@media only screen and (min-width: 1024px) and (max-width: 1025px) and (min-height: 600px)  and (max-height: 601px) {
-    .skill-row {
-        margin: 1.25rem auto;
-    }
-}
-
 #tools {
     background: #D5F8E7;
 }
@@ -512,7 +483,7 @@ header {
 .banner {
     background: rgba(255, 255, 255, 0.1);
     position: relative;
-    top: 67%;
+    top: 69%;
     left: 0;
     padding: 2rem 4rem;
 }
@@ -540,3 +511,52 @@ header {
   .holder {
     margin: 0 auto;
   }
+
+
+@media only screen and (max-width: 691px) {
+/* mobile */
+.skills {
+    justify-content: space-evenly;
+}
+
+.skill-row {
+    width: 100%;
+    text-align: center;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    padding: 0 1.2em;
+}
+
+header {
+    background-size: 90%;
+}
+
+.skill-row img {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.banner {
+    padding: 0;
+}
+
+
+.banner h2, h3 {
+    font-size: 1.2rem;
+}
+/* end of mobile */
+}
+
+
+/* Nest hub */
+@media only screen and (min-width: 1024px) and (max-width: 1025px) and (min-height: 600px)  and (max-height: 601px) {
+    .skill-row {
+        margin: 1.25rem auto;
+    }
+
+
+}
+
