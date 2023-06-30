@@ -298,7 +298,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 4.2rem;
+    height: 7rem;
  }
 
  .dot {
@@ -306,16 +306,16 @@ main {
     width: 0.9375rem;
     background-color: white;
     border-radius: 50%;
-    border: 1px solid gray;
+    border: 1px solid #1B2E35;
     cursor: pointer;
 }
 
-#dot1, #dot2, #dot3 {
+#dot1, #dot2, #dot3, #dot4, #dot5 {
     position: relative;
 }
 
 #dot1 {
-    background: #9DD6D6;
+    background: #1B2E35;
 }
   
 #dot1 .tooltip-text {
@@ -410,6 +410,66 @@ main {
     visibility: visible;
   }
 
+#dot4 .tooltip-text {
+    visibility: hidden;
+    width: 100px;
+    background-color: #1B2E35;
+    opacity: 0.9;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: 110%;
+}
+  
+#dot4 .tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent #1B2E35;
+  }
+
+#dot4:hover .tooltip-text {
+    visibility: visible;
+}
+
+#dot5 .tooltip-text {
+    visibility: hidden;
+    width: 100px;
+    background-color: #1B2E35;
+    opacity: 0.9;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: 110%;
+}
+  
+#dot5 .tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent #1B2E35;
+  }
+
+#dot5:hover .tooltip-text {
+    visibility: visible;
+}
+
 @media only screen and (max-width: 690px) {
 /* mobile */
 .skills {
@@ -445,3 +505,34 @@ header {
         margin: 1.25rem auto;
     }
 }
+
+#tools {
+    background: #D5F8E7;
+}
+
+
+#projects, #tools {
+    text-align: left;
+}
+
+.banner {
+    background: rgba(255, 255, 255, 0.1);
+    position: relative;
+    top: 75%;
+    left: 0;
+    padding: 2rem 4rem;
+}
+
+.banner h2, h3 {
+    color: #1B2E35;
+}
+
+.blink {
+    animation: blinker 2s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
