@@ -5,12 +5,6 @@
         font-family: 'Montserrat', sans-serif;
         font-family: 'Sacramento', cursive;
 */
-*, *::before, *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 
 html {
     scroll-behavior: smooth; 
@@ -518,7 +512,7 @@ header {
 .banner {
     background: rgba(255, 255, 255, 0.1);
     position: relative;
-    top: 75%;
+    top: 67%;
     left: 0;
     padding: 2rem 4rem;
 }
@@ -529,7 +523,7 @@ header {
 
 .blink {
     animation: blinker 2s linear infinite;
-  }
+}
   
   @keyframes blinker {
     50% {
@@ -538,6 +532,16 @@ header {
   }
 
   .current {
+    list-style: upper-alpha;
     background-color: #59E4A8;
     display: inline-block;
+  }
+
+  .holder {
+    margin: 0 auto;
+  }
+
+  .skill-em {
+    letter-spacing: -0.3125rem;
+    opacity: 0.9;
   }
