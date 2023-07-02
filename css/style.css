@@ -562,7 +562,7 @@ header {
 
 
 ul, ol {
-    margin: 9px;
-    padding: 9px;
+    margin: 0 9px;
+    padding: 0 9px;
     box-sizing: border-box;
 }
