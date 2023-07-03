@@ -53,46 +53,8 @@ h3 {
 
 #top {
     line-height: 2;
-    background: #9DD6D6;
+    background: none;
     position: relative;
-}
-
-#pen {
-    position: relative;
-    bottom: 20rem;;
-    left: 67.6rem; 
-    width: 2.9rem;
-    z-index: 9999;
-    transform: rotate(0.2turn);
-}
-
-#cloud1 {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 21.875rem;
-}
-
-#cloud2 {
-    position: relative;
-    top: -15rem;
-    left: 0;
-    width: 34rem;
-}
-
-#cloud3 {
-    position: relative;
-    top: 4rem;
-    left: 1rem;
-    width: 31.25rem;
-}
-
-#fly {
-    position: absolute;
-    top: 30rem;
-    right: 30rem;
-    width: 10.25rem;
-    z-index: 99999;
 }
 
 a {
@@ -107,8 +69,6 @@ a {
     text-align: left;
     line-height: 2;
 }
-
-
 
 .code-img {
     width: 25%;
@@ -257,19 +217,73 @@ main {
  header {
     position: relative;
     overflow: hidden;
-    height: 100%;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: url("../images/rush.jpg") #FFF;
-    background-size: 55%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    width: 100%;
-    height: 100%;
  }
+
+
+ .hero {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ .hero img {
+    width: 50vw;
+ }
+
+ .banner {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    color: #1B2E35;
+}
+
+/* font-family: 'Merriweather', serif;
+font-family: 'Montserrat', sans-serif; */
+
+
+.headings {
+    display: flex;
+    flex-direction: column;
+    padding: 6rem 10%;
+    border-radius: 5%;
+    background: rgba(89, 228, 168, 0.04);
+    background-image: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0.09) 50%, rgba(89, 228, 168, 0.007) 10%);
+
+}
+
+.explainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.banner h2 {
+    font-family: 'Merriweather';
+    font-weight: bold;
+    font-size: 3.9375rem;
+    color: #59E4A8;
+    text-shadow: 0.1rem  .2rem black;
+}
+
+.banner h3 {
+    font-size: 2.625rem;
+    font-family: 'Montserrat';
+    font-weight: lighter;
+    letter-spacing: 1rem;
+    text-shadow: 0.1rem  .2rem white;
+
+
+}
+
 
  .skills {
     display: flex;
@@ -480,17 +494,7 @@ main {
     text-align: left;
 }
 
-.banner {
-    background: rgba(255, 255, 255, 0.1);
-    position: relative;
-    top: 69%;
-    left: 0;
-    padding: 2rem 4rem;
-}
 
-.banner h2, h3 {
-    color: #1B2E35;
-}
 
 .blink {
     animation: blinker 2s linear infinite;
@@ -531,7 +535,7 @@ main {
 }
 
 header {
-    background-size: 90%;
+    position: relative;
 }
 
 .skill-row img {
@@ -544,8 +548,8 @@ header {
 }
 
 
-.banner h2, h3 {
-    font-size: 1.2rem;
+.banner h3 {
+    font-size: 1.5rem
 }
 /* end of mobile */
 }
