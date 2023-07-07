@@ -523,6 +523,14 @@ font-family: 'Montserrat', sans-serif; */
     justify-content: space-evenly;
 }
 
+p {
+    line-height: 1;
+}
+
+#projects {
+    font-size: 12px;
+}
+
 .skill-row {
     width: 100%;
     text-align: center;
@@ -534,8 +542,24 @@ font-family: 'Montserrat', sans-serif; */
     padding: 0 1.2em;
 }
 
+.skill-row h3 {
+    padding-bottom: .5rem;;
+}
+
+h2 {
+    font-size: 1.875rem;
+}
+
 header {
     position: relative;
+}
+
+.projectsd .holder {
+    font-size: 0.75rem;
+}
+
+ol, ul {
+    padding: 0;
 }
 
 .skill-row img {
@@ -550,6 +574,10 @@ header {
 
 .banner h3 {
     font-size: 1.5rem
+}
+
+#contact-me p {
+    width: 85%;
 }
 /* end of mobile */
 }

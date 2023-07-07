@@ -20,14 +20,14 @@ document.addEventListener("scroll", function (e) {
         dot4.style.backgroundColor = "white";
         dot5.style.backgroundColor = "white";
     }
-     else if (window.scrollY >  Math.floor(document.body.scrollHeight * 0.4) && window.scrollY <=  Math.floor(document.body.scrollHeight * 0.6)) {
+     else if (window.scrollY >  Math.floor(document.body.scrollHeight * 0.4) && window.scrollY <  Math.floor(document.body.scrollHeight * 0.6)) {
         dot1.style.backgroundColor = "white";
         dot2.style.backgroundColor = "white";
         dot3.style.backgroundColor = "#1B2E35";
         dot4.style.backgroundColor = "white";
         dot5.style.backgroundColor = "white";
     } 
-    else if (window.scrollY >  Math.floor(document.body.scrollHeight * 0.6) && window.scrollY <=  Math.floor(document.body.scrollHeight * 0.79)) {
+    else if (window.scrollY >=  Math.floor(document.body.scrollHeight * 0.6) && window.scrollY <=  Math.floor(document.body.scrollHeight * 0.6)) {
         dot1.style.backgroundColor = "white";
         dot2.style.backgroundColor = "white";
         dot3.style.backgroundColor = "white";
