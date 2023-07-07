@@ -567,10 +567,21 @@ ol, ul {
     margin: 0 auto;
 }
 
+#top > header > div.hero > img {
+    width:100%;
+}
+
 .banner {
     padding: 0;
 }
 
+#top > header > div.banner > div.headings {
+    padding: 0 10% 3rem 10%;
+}
+
+#top > header > div.banner { 
+    justify-content: center;
+}
 
 .banner h3 {
     font-size: 1.5rem
