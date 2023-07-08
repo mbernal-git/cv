@@ -20,8 +20,22 @@ var sections = document.getElementsByTagName("section");
 var tools = document.querySelector("#tools");
 var footer = document.querySelector(".bg-footer");
 
+var dots = document.querySelectorAll(".dot");
+var links = document.getElementsByTagName("a");
+
 var bgActive = "rgb(33, 38, 45)";
 var btnInactive = "white";
+
+var html = document.getElementsByTagName("html")[0];
+
+function linkHover(e) {
+    if (toggleDarkTheme) {
+        e.target.style.cursor = "url('../images/cursor-dark.png'), auto";
+        return;
+    }
+
+    e.target.style.cursor = "url('../images/cursor-light.png'), auto";
+}
 
 // // Update into dynamic element
 document.addEventListener("scroll", function (e) { 
@@ -83,18 +97,28 @@ dot5.addEventListener("click", function(e) {
     window.scrollTo(0,  (document.body.scrollHeight * 0.8));
 });
 
+cta.addEventListener("mouseover", linkHover);
+
+dots.forEach((d) => {
+    d.addEventListener("mouseover", linkHover);
+});
+
+for (let i = 0; i< links.length; i++) {
+    links[i].addEventListener("mouseover", linkHover);
+}
+
+lamp.addEventListener("mouseover", linkHover);
+
 lamp.addEventListener("click", function(e) {
     toggleDarkTheme = !toggleDarkTheme;
     bgActive = "#66493D";
 
     if (toggleDarkTheme) {
+
+        html.style.cursor = "url('../images/cursor-dark.png'), auto";
         bg = "rgb(33, 38, 45)";
         e.target.src = "../images/full-moon.png";
         e.target.title = "light mode";
-
-        // e.target.style.background = "rgba(255, 193, 7, 0.9)";
-        // e.target.style.boxShadow = "4px 4px rgba(220, 220, 220, 0.9)";
-        
     
         for (let i = 0 ; i < p.length; i ++) {
             p[i].style.color = "grey";
@@ -127,16 +151,16 @@ lamp.addEventListener("click", function(e) {
         footer.style.backgroundImage = "linear-gradient(to top, rgba(0, 0, 0, 0.5), #010409), url('../images/mountain3.png')";
         return;
     } 
+
+    html.style.cursor = "url('../images/cursor-light.png'), auto";
+
     bg = "rgba(33, 38, 45, 0.9)";
     
     bgActive = "rgb(33, 38, 45)";
     e.target.src = "../images/light.png";
     e.target.title = "dark mode";
 
-
-    // e.target.style.background = "rgb(33, 38, 45)";
-    // e.target.style.boxShadow = "4px 4px 10px 2px rgba(255, 193, 7, 0.9)";
-
+    cta.addEventListener("click", linkHover(e));
 
     for (let i = 0 ; i < p.length; i ++) {
         p[i].style.color = "black";
@@ -168,11 +192,7 @@ lamp.addEventListener("click", function(e) {
     bigHeading.style.color = "#59E4A8";
     bigHeading.style.textShadow = "0.1rem .2rem black";
     footer.style.backgroundImage = "linear-gradient(to top, transparent 0, transparent 0), url('../images/mountain3.png')";
-
-
 });
 
-// cta.addEventListener("mousein", function(e) {
-//     const bg = toggleDarkTheme ?  "rgb(33, 38, 45)" : "rgba(33, 38, 45, 0.9)";
-//     e.target.style.background = bg;
-// });
+
+// OMG What a mess! Need to major refactor this rubbish!
