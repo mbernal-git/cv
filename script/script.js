@@ -89,11 +89,11 @@ lamp.addEventListener("click", function(e) {
 
     if (toggleDarkTheme) {
         bg = "rgb(33, 38, 45)";
-        e.target.src = "../images/light-mode.png";
+        e.target.src = "../images/full-moon.png";
         e.target.title = "light mode";
 
-        e.target.style.background = "rgba(255, 193, 7, 0.9)";
-        e.target.style.boxShadow = "4px 4px rgba(220, 220, 220, 0.9)";
+        // e.target.style.background = "rgba(255, 193, 7, 0.9)";
+        // e.target.style.boxShadow = "4px 4px rgba(220, 220, 220, 0.9)";
         
     
         for (let i = 0 ; i < p.length; i ++) {
@@ -130,12 +130,12 @@ lamp.addEventListener("click", function(e) {
     bg = "rgba(33, 38, 45, 0.9)";
     
     bgActive = "rgb(33, 38, 45)";
-    e.target.src = "../images/dark-mode.png";
+    e.target.src = "../images/light.png";
     e.target.title = "dark mode";
 
 
-    e.target.style.background = "rgb(33, 38, 45)";
-    e.target.style.boxShadow = "4px 4px 10px 2px rgba(255, 193, 7, 0.9)";
+    // e.target.style.background = "rgb(33, 38, 45)";
+    // e.target.style.boxShadow = "4px 4px 10px 2px rgba(255, 193, 7, 0.9)";
 
 
     for (let i = 0 ; i < p.length; i ++) {
@@ -172,7 +172,7 @@ lamp.addEventListener("click", function(e) {
 
 });
 
-cta.addEventListener("mousein", function(e) {
-    const bg = toggleDarkTheme ?  "rgb(33, 38, 45)" : "rgba(33, 38, 45, 0.9)";
-    e.target.style.background = bg;
-});
+// cta.addEventListener("mousein", function(e) {
+//     const bg = toggleDarkTheme ?  "rgb(33, 38, 45)" : "rgba(33, 38, 45, 0.9)";
+//     e.target.style.background = bg;
+// });

@@ -619,7 +619,7 @@ ul, ol {
 }
 
 .lamp {
-    width: 70px;
+    width: 90px;
 }
 
 
@@ -627,12 +627,12 @@ ul, ol {
     width: 100%;
     border-radius: 50%;
     padding: 1rem;
-    background: rgb(33, 38, 45);
-    box-shadow: 4px 4px 10px 2px rgba(255, 193, 7, 0.9);
+    /* background: rgb(33, 38, 45);
+    box-shadow: 4px 4px 10px 2px rgba(255, 193, 7, 0.9); */
 }
 
 .lamp img:hover {
-    background: rgb(33, 38, 45);
+    /* background: rgb(33, 38, 45); */
 
     cursor: pointer;
     padding: .9rem;
