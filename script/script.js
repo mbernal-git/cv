@@ -90,7 +90,7 @@ lamp.addEventListener("click", function(e) {
     if (toggleDarkTheme) {
         bg = "rgb(33, 38, 45)";
         e.target.src = "../images/light-mode.png";
-        e.target.title = "dark mode";
+        e.target.title = "light mode";
 
         e.target.style.background = "rgba(255, 193, 7, 0.9)";
         e.target.style.boxShadow = "0 0 0 4px rgb(255, 193, 7)";
@@ -135,7 +135,7 @@ lamp.addEventListener("click", function(e) {
     
     bgActive = "rgb(33, 38, 45)";
     e.target.src = "../images/dark-mode.png";
-    e.target.title = "light mode";
+    e.target.title = "dark mode";
 
 
     e.target.style.background = "rgb(33, 38, 45)";
