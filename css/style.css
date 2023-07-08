@@ -111,7 +111,7 @@ a {
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
-    color: #FFFFFF;
+    color: #b4acac;
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 100;
@@ -628,7 +628,7 @@ ul, ol {
     border-radius: 50%;
     padding: 1rem;
     background: rgb(33, 38, 45);
-    box-shadow: 4px 4px #fff;
+    box-shadow: 4px 4px 10px 2px rgba(255, 193, 7, 0.9);
 }
 
 .lamp img:hover {

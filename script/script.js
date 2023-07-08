@@ -93,7 +93,7 @@ lamp.addEventListener("click", function(e) {
         e.target.title = "light mode";
 
         e.target.style.background = "rgba(255, 193, 7, 0.9)";
-        e.target.style.boxShadow = "0 0 0 4px rgb(255, 193, 7)";
+        e.target.style.boxShadow = "4px 4px rgba(220, 220, 220, 0.9)";
         
     
         for (let i = 0 ; i < p.length; i ++) {
@@ -121,13 +121,9 @@ lamp.addEventListener("click", function(e) {
         for (let i = 0 ; i < sections.length; i ++) {
             sections[i].style.background = "#0D1117";
         }
+
         tools.style.backgroundColor = "#010409";
 
-        cta.addEventListener("mousein", function(e) {
-            const bg = toggleDarkTheme ?  "red" : "rgba(33, 38, 45, 0.9)";
-            e.target.style.background = bg;
-        });
-    
         footer.style.backgroundImage = "linear-gradient(to top, rgba(0, 0, 0, 0.5), #010409), url('../images/mountain3.png')";
         return;
     } 
@@ -139,7 +135,7 @@ lamp.addEventListener("click", function(e) {
 
 
     e.target.style.background = "rgb(33, 38, 45)";
-    e.target.style.boxShadow = "4px 4px #fff";
+    e.target.style.boxShadow = "4px 4px 10px 2px rgba(255, 193, 7, 0.9)";
 
 
     for (let i = 0 ; i < p.length; i ++) {
@@ -173,8 +169,10 @@ lamp.addEventListener("click", function(e) {
     bigHeading.style.textShadow = "0.1rem .2rem black";
     footer.style.backgroundImage = "linear-gradient(to top, transparent 0, transparent 0), url('../images/mountain3.png')";
 
-    cta.addEventListener("mousein", function(e) {
-        const bg = toggleDarkTheme ?  "rgb(33, 38, 45)" : "rgba(33, 38, 45, 0.9)";
-        e.target.style.background = bg;
-    });
+
+});
+
+cta.addEventListener("mousein", function(e) {
+    const bg = toggleDarkTheme ?  "rgb(33, 38, 45)" : "rgba(33, 38, 45, 0.9)";
+    e.target.style.background = bg;
 });
