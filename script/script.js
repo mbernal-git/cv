@@ -23,7 +23,7 @@ var footer = document.querySelector(".bg-footer");
 var dots = document.querySelectorAll(".dot");
 var links = document.getElementsByTagName("a");
 
-var bgActive = "rgb(33, 38, 45)";
+var bgActive = "rgb(27, 46, 53)";
 var btnInactive = "white";
 
 var html = document.getElementsByTagName("html")[0];
