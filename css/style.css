@@ -33,6 +33,11 @@
     --link-bg-color-hover: var(--light-primary-color-hover);
 }
 
+:host {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 .container {
     padding: 2rem 0;
 }
