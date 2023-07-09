@@ -15,6 +15,10 @@
     --light-primary-color-hover: rgba(27, 46, 53, 0.5);
     --color-white: rgb(250, 250, 250);
 
+    --light-cursor: url("../images/cursor-light.png"), auto;
+    --dark-cursor: url("../images/cursor-dark.png"), auto;
+    --link-cursor: url("../images/grab.png"), auto;
+
     /* Dark theme */
     --dark-primary-bg-color: rgb(1, 4, 9);
     --dark-secondary-bg-color: rgb(13, 17, 23);
@@ -31,7 +35,8 @@
 }
 
 html {
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
+    cursor: var(--light-cursor);
 }
 
 body {
@@ -67,6 +72,7 @@ a:active {
     padding: 12px 21px;
     background: var(--link-bg-color);
     border-radius: 5px;
+    cursor: var(--light-cursor);
 }
 
 a:hover {
@@ -232,6 +238,11 @@ nav {
     width: 70px;
 }
 
+.navBtn:hover .tooltip-text{
+    cursor:url("../images/cursor-light.png"), auto;
+    visibility: visible;
+}
+
 /* Toggler */
 .toggler {
     display: flex;
@@ -291,7 +302,8 @@ nav {
 
 /* Dark mode */
 .dark {
-    background: var(--dark-secondary-bg-color)
+    background: var(--dark-secondary-bg-color);
+    cursor: var(--dark-cursor);
 }
 
 .dark h1,
@@ -419,4 +431,12 @@ a.body-link {
     font-weight: 400;
     color: blue;
     text-decoration: underline;
+}
+
+#toggle-theme:hover {
+    cursor: var(--light-cursor);
+}
+
+a:hover:not(.navBtn) {
+    cursor: var(--link-cursor);
 }
