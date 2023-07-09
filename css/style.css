@@ -93,6 +93,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     flex: 1;
+    text-align: center;
 }
 
 .headings h1 {
@@ -104,7 +105,7 @@ a:hover {
     font-weight: 580;
 }
 
-.headings p {
+.subheadings p {
     font-family: var(--secondary-font);
     font-weight: 550;
 }
@@ -340,6 +341,10 @@ nav {
         align-items: center;
         flex-direction: column;
         flex: .5;
+    }
+
+    .subheading p {
+        text-align: center;
     }
 
     #skills {
