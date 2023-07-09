@@ -165,6 +165,10 @@ a:hover {
     height: 100%;   
 }
 
+.footer-link {
+    margin: 0 .5rem;
+}
+
 .cta {
     display: flex;
     flex-direction: column;
