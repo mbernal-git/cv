@@ -5,6 +5,7 @@ let navBtn2 = document.getElementById("skillsBtn");
 let navBtn3 = document.getElementById("toolsBtn");
 let navBtn4 = document.getElementById("projectsBtn");
 let navBtn5 = document.getElementById("contactBtn");
+let update = document.querySelector("#update");
 
 let btnActive = "rgb(27, 46, 53)";
 let btnInactive = "white";
@@ -50,6 +51,7 @@ function changeBgNav() {
 // Toggle dark mode
 toggler.addEventListener("change", () => {
     main.classList.toggle("dark");
+    update.style.color = "rgb(1, 4, 9)";
 });
 
 // Navigation
