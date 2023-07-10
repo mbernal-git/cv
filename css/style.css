@@ -326,10 +326,6 @@ nav {
     cursor: var(--dark-cursor);
 }
 
-.dark .headings h2 {
-    text-shadow: black 0.1rem 0.2rem;
-}
-
 .dark h1,
 .dark h2,
 .dark h3,
@@ -337,7 +333,6 @@ nav {
 .dark h5,
 .dark h6 {
     color: var(--dark-heading-color);
-    text-shadow:  black 0.1rem 0.2rem;
 }
 
 .dark p,
