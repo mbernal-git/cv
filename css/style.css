@@ -69,6 +69,14 @@ h2 {
     font-weight: normal;
 }
 
+img {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;   
+}
+
 /* Links */
 a:link,
 a:visited,
