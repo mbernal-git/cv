@@ -11,7 +11,6 @@ function changeBgNav() {
     let btnActive = (main.classList.contains("dark") ? "rgb(102, 73, 61)" : "rgb(27, 46, 53)");
     let btnInactive = "white";
 
-    console.log(btnActive);
     if (window.scrollY === 0 || window.scrollY < Math.floor(document.body.scrollHeight * 0.2)) {
         navBtn1.style.backgroundColor = btnActive;
         navBtn2.style.backgroundColor = btnInactive;
