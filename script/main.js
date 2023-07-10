@@ -5,7 +5,6 @@ let navBtn2 = document.getElementById("skillsBtn");
 let navBtn3 = document.getElementById("toolsBtn");
 let navBtn4 = document.getElementById("projectsBtn");
 let navBtn5 = document.getElementById("contactBtn");
-let update = document.querySelector("#update");
 
 function changeBgNav() {
     let btnActive = (main.classList.contains("dark") ? "rgb(102, 73, 61)" : "rgb(27, 46, 53)");
@@ -55,23 +54,23 @@ toggler.addEventListener("change", () => {
 });
 
 // Navigation
-navBtn1.addEventListener("click", function(e) {
+navBtn1.addEventListener("click", () => {
     window.scrollTo(0, 0);
 });
 
-navBtn2.addEventListener("click", function(e) {
+navBtn2.addEventListener("click", () => {
     window.scrollTo(0,  (document.body.scrollHeight * 0.2));
 });
 
-navBtn3.addEventListener("click", function(e) {
+navBtn3.addEventListener("click", () => {
     window.scrollTo(0,  (document.body.scrollHeight * 0.4009));
 });
 
-navBtn4.addEventListener("click", function(e) {
+navBtn4.addEventListener("click", () => {
     window.scrollTo(0,  (document.body.scrollHeight * 0.600999));
 });
 
-navBtn5.addEventListener("click", function(e) {
+navBtn5.addEventListener("click", () => {
     window.scrollTo(0,  (document.body.scrollHeight * 0.8));
 });
 
