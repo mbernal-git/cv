@@ -370,7 +370,6 @@ nav {
 
     .headings {
         justify-content: center;
-        /* margin: 30% 0; */
         flex: 0.9;
         text-align: center;
     }
@@ -437,7 +436,7 @@ nav {
 }
 
 /* Nest hub */
-@media only screen and (min-width: 1024px) and (max-width: 1025px) and (min-height: 600px)  and (max-height: 601px) {
+@media only screen and (min-width: 1024px) and (max-width: 1025px) and (min-height: 600px) and (max-height: 601px) {
 
 }
 
@@ -455,7 +454,6 @@ nav {
 /* Temp */
 ul, ol {
     padding: 0 1.8rem;
-    margin: 0;
     margin: 0 auto;
 }
 
