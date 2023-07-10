@@ -284,7 +284,6 @@ nav {
     padding: 5px;
 }
 
-/* add this */
 .dark #toggle-theme:hover {
     cursor: var(--dark-cursor);
 }
@@ -326,6 +325,18 @@ nav {
     cursor: var(--dark-cursor);
 }
 
+.dark .navBtn {
+    border-color: rgb(102, 73, 61);
+}
+
+.dark #bannerBtn,
+.dark #skillsBtn,
+.dark #toolsBtn,
+.dark #projectsBtn,
+.dark #contactBtn {
+    transition: all 0.5s ease;
+}
+
 .dark h1,
 .dark h2,
 .dark h3,
@@ -344,6 +355,10 @@ nav {
 .dark #skills,
 .dark #projects {
     background: var(--dark-primary-bg-color);
+}
+
+.dark #update {
+    color: rgb(1, 4, 9);
 }
 
 @media only screen and (max-width: 691px) {

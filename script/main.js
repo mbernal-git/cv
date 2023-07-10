@@ -7,10 +7,11 @@ let navBtn4 = document.getElementById("projectsBtn");
 let navBtn5 = document.getElementById("contactBtn");
 let update = document.querySelector("#update");
 
-let btnActive = "rgb(27, 46, 53)";
-let btnInactive = "white";
-
 function changeBgNav() {
+    let btnActive = (main.classList.contains("dark") ? "rgb(102, 73, 61)" : "rgb(27, 46, 53)");
+    let btnInactive = "white";
+
+    console.log(btnActive);
     if (window.scrollY === 0 || window.scrollY < Math.floor(document.body.scrollHeight * 0.2)) {
         navBtn1.style.backgroundColor = btnActive;
         navBtn2.style.backgroundColor = btnInactive;
@@ -51,7 +52,7 @@ function changeBgNav() {
 // Toggle dark mode
 toggler.addEventListener("change", () => {
     main.classList.toggle("dark");
-    update.style.color = "rgb(1, 4, 9)";
+    changeBgNav();
 });
 
 // Navigation
