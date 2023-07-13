@@ -245,7 +245,7 @@ nav {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
-    transition: transform 0.4s;
+    transition: transform 0.4s ease-in;
 }
 
 .navBtn:hover {
