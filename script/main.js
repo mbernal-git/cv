@@ -10,37 +10,37 @@ function changeBgNav() {
 
     if (window.scrollY === 0 || window.scrollY < Math.floor(document.body.scrollHeight * 0.2)) {
         navBtn1.style.transform = "scale(1.8) rotate(0.01deg)";
-        navBtn2.style.transform = "";
-        navBtn3.style.transform = "";
-        navBtn4.style.transform = "";
-        navBtn5.style.transform = "";
+        navBtn2.style.transform = "scale(1) rotate(0.00deg)";
+        navBtn3.style.transform = "scale(1) rotate(0.00deg)";
+        navBtn4.style.transform = "scale(1) rotate(0.00deg)";
+        navBtn5.style.transform = "scale(1) rotate(0.00deg)";
     }
      else if (window.scrollY >= Math.floor(document.body.scrollHeight * 0.2) && window.scrollY <= Math.floor(document.body.scrollHeight * 0.4)) {
-        navBtn1.style.tranform = "";
+        navBtn1.style.tranform = "scale(1) rotate(0.00deg)";
         navBtn2.style.transform = "scale(1.8) rotate(0.01deg)";
-        navBtn3.style.transform = "";
-        navBtn4.style.transform = "";
-        navBtn5.style.transform = "";
+        navBtn3.style.transform = "scale(1) rotate(0.00deg)";
+        navBtn4.style.transform = "scale(1) rotate(0.00deg)";
+        navBtn5.style.transform = "scale(1) rotate(0.00deg)";
     }
      else if (window.scrollY > Math.floor(document.body.scrollHeight * 0.4) && window.scrollY < Math.floor(document.body.scrollHeight * 0.6)) {
-        navBtn1.style.transform = "";
-        navBtn2.style.transform = "";
+        navBtn1.style.transform = "scale(1) rotate(0.00deg)";
+        navBtn2.style.transform = "scale(1) rotate(0.00deg)";
         navBtn3.style.transform = "scale(1.8) rotate(0.01deg)";
-        navBtn4.style.transform = "";
-        navBtn5.style.transform = "";
+        navBtn4.style.transform = "scale(1) rotate(0.00deg)";
+        navBtn5.style.transform = "scale(1) rotate(0.00deg)";
     } 
     else if (window.scrollY >= Math.floor(document.body.scrollHeight * 0.6) && window.scrollY < Math.floor(document.body.scrollHeight * 0.61)) {
-        navBtn1.style.transform = "";
-        navBtn2.style.transform = "";
-        navBtn3.style.transform = "";
+        navBtn1.style.transform = "scale(1) rotate(0.00deg)";
+        navBtn2.style.transform = "scale(1) rotate(0.00deg)";
+        navBtn3.style.transform = "scale(1) rotate(0.00deg)";
         navBtn4.style.transform = "scale(1.8) rotate(0.01deg)";
-        navBtn5.style.transform = "";
+        navBtn5.style.transform = "scale(1) rotate(0.00deg)";
     } 
     else if (window.scrollY >= Math.floor(document.body.scrollHeight * 0.79)) {
-        navBtn1.style.transform = "";
-        navBtn2.style.transform = "";
-        navBtn3.style.transform = "";
-        navBtn4.style.transform = "";
+        navBtn1.style.transform = "scale(1) rotate(0.00deg)";
+        navBtn2.style.transform = "scale(1) rotate(0.00deg)";
+        navBtn3.style.transform = "scale(1) rotate(0.00deg)";
+        navBtn4.style.transform = "scale(1) rotate(0.00deg)";
         navBtn5.style.transform = "scale(1.8) rotate(0.01deg)";
     } 
 }
