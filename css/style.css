@@ -228,19 +228,19 @@ footer {
 /* Navigation */
 nav {
     position: fixed;
-    top: 40%;
+    top: 35%;
     right: 1.89%;
     z-index: 1;
     background-color: none;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    height: 30%;
+    justify-content: space-around;
+    height: 40%;
 }
 
 .navBtn {
     position: relative;
-    height: 32px;
+    height: 38px;
     width: 45px;
     background-repeat: no-repeat;
     background-size: contain;
@@ -272,45 +272,28 @@ nav {
     background-image: url("../images/nav/chat.png");
 }
 
-/* Desktop */
 .navBtn span {
     visibility: hidden;
     color: var(--light-primary-color);
     text-shadow:  black 1px 1px 30px;
-    position: absolute;
+    position: relative;
     border-radius: 2px;
-    bottom: -33%;
-    right: 5%;
+    display: block;
+    bottom: -95%;
+    right: 0%;
     width: 45px;
     text-align: center;
     opacity: 1;
     font-size: 9px;
 }
 
-#toggle-theme > div.light-icon > span,
-#toggle-theme > div.dark-icon > span {
-    visibility: hidden;
-    background: var(--light-primary-color);
-    color: white;
-    position: absolute;
-    border-radius: 6px;
-    padding: 1px 0 1px 7px;
-    top: 10px;
-    right: 110%;
-    width: 100px;
-    text-align: center;
-    opacity: 0.7;
-}
-
-#toggle-theme > div.light-icon > img:hover ~ span,
-#toggle-theme > div.dark-icon > img:hover~ span {
-    cursor:url("../images/cursor-light.png"), auto;
-    visibility: visible !important;
-}
-
-.navBtn:hover .tooltip-text{
+.navBtn:hover .tooltip-text {
     cursor:url("../images/cursor-light.png"), auto;
     visibility: visible;
+}
+
+.navBtn:hover:not(.tooltip-text) {
+    z-index: 1;
 }
 
 /* Toggler */
@@ -323,6 +306,27 @@ nav {
     top: 3%;
     right: 1.79%;
     z-index: 1;
+}
+
+#toggle-theme > div.light-icon > span,
+#toggle-theme > div.dark-icon > span {
+    visibility: hidden;
+    color: var(--light-primary-color);
+    position: absolute;
+    border-radius: 6px;
+    padding: 1px 0 1px 7px;
+    top: 16px;
+    right: 67%;
+    width: 100px;
+    text-align: center;
+    opacity: 0.7;
+    font-size: 11px;
+}
+
+#toggle-theme > div.light-icon > img:hover ~ span,
+#toggle-theme > div.dark-icon > img:hover~ span {
+    cursor:url("../images/cursor-light.png"), auto;
+    visibility: visible !important;
 }
 
 #checkbox {
@@ -385,6 +389,11 @@ nav {
     cursor: var(--dark-cursor);
 }
 
+.dark #toggle-theme > div.light-icon > span,
+.dark #toggle-theme > div.dark-icon > span { 
+    color: var(--color-white);
+}
+
 .dark .navBtn {
     border-color: rgb(102, 73, 61);
 }
@@ -425,7 +434,7 @@ nav {
     color: rgb(1, 4, 9);
 }
 
-@media only screen and (max-width: 691px) {
+@media only screen and (max-width: 691px){
 
     .navBtn {
         transition: transform 0.4s ease-in;
