@@ -7,43 +7,41 @@ let navBtn4 = document.getElementById("projectsBtn");
 let navBtn5 = document.getElementById("contactBtn");
 
 function changeBgNav() {
-    let btnActive = (main.classList.contains("dark") ? "rgb(102, 73, 61)" : "rgb(27, 46, 53)");
-    let btnInactive = "white";
 
     if (window.scrollY === 0 || window.scrollY < Math.floor(document.body.scrollHeight * 0.2)) {
-        navBtn1.style.backgroundColor = btnActive;
-        navBtn2.style.backgroundColor = btnInactive;
-        navBtn3.style.backgroundColor = btnInactive;
-        navBtn4.style.backgroundColor = btnInactive;
-        navBtn5.style.backgroundColor = btnInactive;
+        navBtn1.style.transform = "scale(1.8) rotate(0.01deg)";
+        navBtn2.style.transform = "";
+        navBtn3.style.transform = "";
+        navBtn4.style.transform = "";
+        navBtn5.style.transform = "";
     }
      else if (window.scrollY >= Math.floor(document.body.scrollHeight * 0.2) && window.scrollY <= Math.floor(document.body.scrollHeight * 0.4)) {
-        navBtn1.style.backgroundColor = btnInactive;
-        navBtn2.style.backgroundColor = btnActive;
-        navBtn3.style.backgroundColor = btnInactive;
-        navBtn4.style.backgroundColor = btnInactive;
-        navBtn5.style.backgroundColor = btnInactive;
+        navBtn1.style.tranform = "";
+        navBtn2.style.transform = "scale(1.8) rotate(0.01deg)";
+        navBtn3.style.transform = "";
+        navBtn4.style.transform = "";
+        navBtn5.style.transform = "";
     }
      else if (window.scrollY > Math.floor(document.body.scrollHeight * 0.4) && window.scrollY < Math.floor(document.body.scrollHeight * 0.6)) {
-        navBtn1.style.backgroundColor = btnInactive;
-        navBtn2.style.backgroundColor = btnInactive;
-        navBtn3.style.backgroundColor = btnActive;
-        navBtn4.style.backgroundColor = btnInactive;
-        navBtn5.style.backgroundColor = btnInactive;
+        navBtn1.style.transform = "";
+        navBtn2.style.transform = "";
+        navBtn3.style.transform = "scale(1.8) rotate(0.01deg)";
+        navBtn4.style.transform = "";
+        navBtn5.style.transform = "";
     } 
     else if (window.scrollY >= Math.floor(document.body.scrollHeight * 0.6) && window.scrollY < Math.floor(document.body.scrollHeight * 0.61)) {
-        navBtn1.style.backgroundColor = btnInactive;
-        navBtn2.style.backgroundColor = btnInactive;
-        navBtn3.style.backgroundColor = btnInactive;
-        navBtn4.style.backgroundColor = btnActive;
-        navBtn5.style.backgroundColor = btnInactive;
+        navBtn1.style.transform = "";
+        navBtn2.style.transform = "";
+        navBtn3.style.transform = "";
+        navBtn4.style.transform = "scale(1.8) rotate(0.01deg)";
+        navBtn5.style.transform = "";
     } 
     else if (window.scrollY >= Math.floor(document.body.scrollHeight * 0.79)) {
-        navBtn1.style.backgroundColor = btnInactive;
-        navBtn2.style.backgroundColor = btnInactive;
-        navBtn3.style.backgroundColor = btnInactive;
-        navBtn4.style.backgroundColor = btnInactive;
-        navBtn5.style.backgroundColor = btnActive;
+        navBtn1.style.transform = "";
+        navBtn2.style.transform = "";
+        navBtn3.style.transform = "";
+        navBtn4.style.transform = "";
+        navBtn5.style.transform = "scale(1.8) rotate(0.01deg)";
     } 
 }
  
