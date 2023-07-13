@@ -240,7 +240,7 @@ nav {
 
 .navBtn {
     position: relative;
-    height: 35px;
+    height: 32px;
     width: 45px;
     background-repeat: no-repeat;
     background-size: contain;
@@ -249,7 +249,7 @@ nav {
 }
 
 .navBtn:hover {
-    transform: scale(1.8) rotate(0.01deg);
+    transform: scale(1.8) !important;
 }
 
 #bannerBtn {
@@ -272,18 +272,19 @@ nav {
     background-image: url("../images/nav/chat.png");
 }
 
+/* Desktop */
 .navBtn span {
     visibility: hidden;
-    background: var(--light-primary-color);
-    color: white;
+    color: var(--light-primary-color);
+    text-shadow:  black 1px 1px 30px;
     position: absolute;
-    border-radius: 6px;
-    padding: 5px 0 5px 7px;
-    top: -5px;
-    right: 110%;
-    width: 90px;
+    border-radius: 2px;
+    bottom: -33%;
+    right: 5%;
+    width: 45px;
     text-align: center;
-    opacity: 0.7;
+    opacity: 1;
+    font-size: 9px;
 }
 
 #toggle-theme > div.light-icon > span,
@@ -293,7 +294,7 @@ nav {
     color: white;
     position: absolute;
     border-radius: 6px;
-    padding: 5px 0 5px 7px;
+    padding: 1px 0 1px 7px;
     top: 10px;
     right: 110%;
     width: 100px;
@@ -388,6 +389,10 @@ nav {
     border-color: rgb(102, 73, 61);
 }
 
+.dark .navBtn span {
+    color: var(--dark-body-color);
+}
+
 .dark #bannerBtn,
 .dark #skillsBtn,
 .dark #toolsBtn,
@@ -421,6 +426,35 @@ nav {
 }
 
 @media only screen and (max-width: 691px) {
+
+    .navBtn {
+        transition: transform 0.4s ease-in;
+    }
+
+    .navBtn span {
+        visibility: hidden;
+        color: var(--light-primary-color);
+        text-shadow:  black 1px 1px 30px;
+        position: absolute;
+        border-radius: 2px;
+        bottom: 25%;
+        right: 15%;
+        width: 32px;
+        text-align: center;
+        opacity: 1;
+        font-size: 8px;
+        background: rgba(155, 179, 188, 0.8);
+        color: var(--dark-primary-bg-color);
+    }
+
+    .dark .navBtn span {
+        background: rgba(155, 179, 188, 0.8);
+        color: var(--dark-primary-bg-color);
+    }
+
+    .navBtn:hover {
+        transform: scale(1.9);
+    }
 
     .banner-bg {
         background-size: 80%;
@@ -510,7 +544,7 @@ nav {
     }
 }
 
-/* @-webkit-keyframes hover {
+@-webkit-keyframes hover {
     0% {
       -webkit-transform: scale(1.1);
       transform: scale(1.1);
@@ -557,7 +591,7 @@ nav {
       transform: scale(1.4);
     }
   }
-   */
+  
 
 /* Temp */
 ul, ol {
