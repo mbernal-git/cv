@@ -29,14 +29,14 @@ function changeBgNav() {
         navBtn4.style.transform = "scale(1)";
         navBtn5.style.transform = "scale(1)";
     } 
-    else if (window.scrollY >= Math.floor(document.body.scrollHeight * 0.6) && window.scrollY < Math.floor(document.body.scrollHeight * 0.61)) {
+    else if (window.scrollY >= Math.floor(document.body.scrollHeight * 0.6) && window.scrollY < Math.floor(document.body.scrollHeight * 0.79)) {
         navBtn1.style.transform = "scale(1)";
         navBtn2.style.transform = "scale(1)";
         navBtn3.style.transform = "scale(1)";
         navBtn4.style.transform = "scale(1.8)";
         navBtn5.style.transform = "scale(1)";
     } 
-    else if (window.scrollY >= Math.floor(document.body.scrollHeight * 0.79)) {
+    else if (window.scrollY > Math.floor(document.body.scrollHeight * 0.6) && window.scrollY < Math.floor(document.body.scrollHeight * 0.8)) {
         navBtn1.style.transform = "scale(1)";
         navBtn2.style.transform = "scale(1)";
         navBtn3.style.transform = "scale(1)";
