@@ -286,6 +286,27 @@ nav {
     opacity: 0.7;
 }
 
+#toggle-theme > div.light-icon > span,
+#toggle-theme > div.dark-icon > span {
+    visibility: hidden;
+    background: var(--light-primary-color);
+    color: white;
+    position: absolute;
+    border-radius: 6px;
+    padding: 5px 0 5px 7px;
+    top: 10px;
+    right: 110%;
+    width: 100px;
+    text-align: center;
+    opacity: 0.7;
+}
+
+#toggle-theme > div.light-icon > img:hover ~ span,
+#toggle-theme > div.dark-icon > img:hover~ span {
+    cursor:url("../images/cursor-light.png"), auto;
+    visibility: visible !important;
+}
+
 .navBtn:hover .tooltip-text{
     cursor:url("../images/cursor-light.png"), auto;
     visibility: visible;
