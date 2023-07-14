@@ -16,7 +16,7 @@ function changeBgNav() {
         navBtn5.style.transform = "scale(1)";
     }
      else if (window.scrollY >= Math.floor(document.body.scrollHeight * 0.2) && window.scrollY <= Math.floor(document.body.scrollHeight * 0.4)) {
-        navBtn1.style.tranform = "scale(1)";
+        navBtn1.style.transform = "scale(1)";
         navBtn2.style.transform = "scale(1.8)";
         navBtn3.style.transform = "scale(1)";
         navBtn4.style.transform = "scale(1)";
